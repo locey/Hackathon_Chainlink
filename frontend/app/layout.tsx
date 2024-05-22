@@ -2,12 +2,10 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-16 11:01:07
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-20 20:22:17
+ * @LastEditTime: 2024-05-22 21:22:08
  * @Description:
  */
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-// import "./globals.css";
 import { Web3Provider } from "@/context/Web3";
 import { WALLETCONNECT_CONFIG } from "@/utils/web3";
 import { headers } from "next/headers";
@@ -16,7 +14,6 @@ import { NotificationProvider } from "@/context/Notifications";
 import "@/assets/globals.css";
 import { Layout } from "@/components/Layout";
 import { PropsWithChildren } from "react";
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,6 +25,7 @@ export default function RootLayout(props: PropsWithChildren) {
     WALLETCONNECT_CONFIG,
     headers().get("cookie")
   );
+  console.log("RootLayout", props);
   return (
     <html lang="en">
       <head>

@@ -2,7 +2,7 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-20 15:58:59
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-20 21:39:56
+ * @LastEditTime: 2024-05-22 20:35:56
  * @Description:
  */
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
@@ -44,5 +44,5 @@ export const store = configureStore({
 export const persistor = persistStore(store);
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-// export const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector;
-// export const useDispatch = () => useReduxDispatch<AppDispatch>();
+export const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector;
+export const useDispatch = () => useReduxDispatch<AppDispatch>();

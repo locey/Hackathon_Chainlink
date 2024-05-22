@@ -6,6 +6,7 @@ interface Props {
   children: ReactNode;
   isExternal?: boolean;
   className?: string;
+  style?: any;
 }
 
 export function LinkComponent(props: Props) {

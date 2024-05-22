@@ -1,3 +1,10 @@
+/*
+ * @Author: Jacket-mzl
+ * @Date: 2024-05-20 11:56:37
+ * @LastEditors: Jacket-mzl
+ * @LastEditTime: 2024-05-22 12:55:41
+ * @Description:
+ */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,6 +22,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;

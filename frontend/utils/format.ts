@@ -2,7 +2,7 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-17 17:25:14
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-17 17:26:36
+ * @LastEditTime: 2024-05-22 17:05:04
  * @Description:
  */
 export function TruncateMiddle(text: string, length: number = 5) {
