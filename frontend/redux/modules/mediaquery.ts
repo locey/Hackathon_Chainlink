@@ -2,7 +2,7 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-20 16:22:58
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-23 00:22:02
+ * @LastEditTime: 2024-05-22 21:30:19
  * @Description:
  */
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
@@ -18,6 +18,7 @@ const mediaSlice = createSlice({
   initialState: mediaState,
   reducers: {
     setMediaQuery(state: MediaState, { payload }: PayloadAction<boolean>) {
+      console.log("我执行setMedia", payload);
       state.isDeskTop = payload;
     },
   },

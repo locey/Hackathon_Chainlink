@@ -2,7 +2,7 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-20 18:21:32
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-23 00:21:05
+ * @LastEditTime: 2024-05-23 21:09:41
  * @Description:
  */
 "use client";
@@ -29,10 +29,10 @@ export function Layout(props: PropsWithChildren) {
     window.addEventListener("resize", setMedia);
   }, []);
   return (
-    <>
+    <div className="flex flex-col h-full">
       <Header></Header>
-      <div>{props.children}</div>
-      <Footer></Footer>
-    </>
+      <div className="flex-1">{props.children}</div>
+      {/* <Footer></Footer> */}
+    </div>
   );
 }
