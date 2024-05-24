@@ -2,15 +2,16 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-17 18:41:20
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-23 22:53:30
+ * @LastEditTime: 2024-05-24 15:52:30
  * @Description:
  */
 "use client";
 import "@/assets/css/beforeGame.css";
 import { useEffect, useState } from "react";
 import Dialog from "@/components/Dialog";
-import { Button, Form, InputNumber } from "antd";
+import { Form, InputNumber } from "antd";
 import { RootState, useSelector } from "@/redux";
+import Button from "@/components/Button";
 
 type ButtonType = "contractMainBtn" | "gameMainBtn";
 
@@ -198,10 +199,10 @@ export default function BeforeGame() {
         </div>
         <div className="relative footer">
           <div className="rounded-full w-4/6 cursor-pointer select-none">
-            Start
+            START
           </div>
           <span
-            className="rules absolute text-xs text-slate-400 cursor-pointer select-none"
+            className="rules absolute text-xs text-white cursor-pointer select-none"
             onClick={() => toggleRulesDialog(true)}
           >
             Rules
@@ -244,12 +245,7 @@ export default function BeforeGame() {
           <div className="flex justify-center mt-10">
             {btnTypeArr.map((element) => {
               return (
-                <Button
-                  type="primary"
-                  className="mx-2"
-                  onClick={() => toggleTransfer(element)}
-                  key={element}
-                >
+                <Button onClick={() => toggleTransfer(element)} key={element}>
                   {element}
                 </Button>
               );

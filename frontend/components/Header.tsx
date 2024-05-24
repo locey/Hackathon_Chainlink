@@ -2,11 +2,11 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-20 09:08:00
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-23 23:03:44
+ * @LastEditTime: 2024-05-24 14:27:44
  * @Description:
  */
 "use client";
-import logo from "@/assets/images/c2n_logo.png";
+import logo from "@/assets/images/logo4.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { RootState, useSelector } from "@/redux";
@@ -37,26 +37,47 @@ export function Header() {
       className="navbar flex justify-between items-center p-4 pt-2 w-8/12 rounded-full"
       style={isDeskTopFlag ? deskTopStyle : phoneStyle}
     >
-      <Image src={logo.src} alt="" width={100} height={50} />
+      <Image src={logo.src} alt="" width={80} height={80} />
       <div className="flex items-center">
         <Link
           href="/"
-          className="mr-6 cursor-pointer select-none text-stone-50 font-bold text-slate-500"
-          style={pathName == "/" ? { color: "#fff" } : {}}
+          className="mr-6 cursor-pointer select-none font-bold text-stone-200"
+          style={
+            pathName == "/"
+              ? {
+                  color: "var(--deepColor)",
+                  borderBottom: "4px solid var(--deepColor)",
+                }
+              : {}
+          }
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="mr-6 cursor-pointer select-none text-stone-50 font-bold text-slate-500"
-          style={pathName == "/about" ? { color: "#fff" } : {}}
+          className="mr-6 cursor-pointer select-none font-bold text-stone-200"
+          style={
+            pathName == "/about"
+              ? {
+                  color: "var(--deepColor)",
+                  borderBottom: "4px solid var(--deepColor)",
+                }
+              : {}
+          }
         >
           About
         </Link>
         <Link
           href="/records"
-          className="mr-6 cursor-pointer select-none text-stone-50 font-bold text-slate-500"
-          style={pathName == "/records" ? { color: "#fff" } : {}}
+          className="mr-6 cursor-pointer select-none font-bold text-stone-200"
+          style={
+            pathName == "/records"
+              ? {
+                  color: "var(--deepColor)",
+                  borderBottom: "4px solid var(--deepColor)",
+                }
+              : {}
+          }
         >
           Records
         </Link>

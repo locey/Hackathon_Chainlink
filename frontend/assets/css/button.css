@@ -1,0 +1,13 @@
+.btn {
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 100px;
+    background: #fff;
+    color: var(--deepColor);
+    border: 1px solid var(--middleColor);
+}
+.btn:hover, .btn:active, .btn:focus {
+    background: var(--middleColor);
+    color: #fff;
+    border: 1px solid #fff;
+}

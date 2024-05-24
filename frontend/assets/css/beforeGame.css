@@ -35,10 +35,11 @@
     text-align: center;
     font-weight: bold;
     display: inline-block;
+    color: var(--middleColor);
 }
 
 .footer div:hover {
-    background: #161616;
+    background: var(--middleColor);
     color: #fff;
 }
 .footer .rules {

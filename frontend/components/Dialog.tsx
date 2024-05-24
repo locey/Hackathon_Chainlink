@@ -2,11 +2,12 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-23 11:39:01
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-23 16:30:11
+ * @LastEditTime: 2024-05-24 14:36:56
  * @Description:
  */
 import { Modal } from "antd";
 import { useState, useEffect, Component, ReactNode } from "react";
+import "@/assets/css/dialog.css";
 
 interface DialogType {
   showDialog: boolean;
