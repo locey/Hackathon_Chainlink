@@ -1,0 +1,51 @@
+.recordItemStyle {
+    background: var(--middleColor);
+  }
+
+.recordItemStyle:hover {
+    background: var(--deepColor);
+}
+
+.headerColStyle{
+    color: var(--deepColor);
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+.colStyle{
+    white-space: nowrap /* 保证文本在一行内显示 */;
+    overflow: hidden /* 超出容器部分隐藏 */;
+    text-overflow: ellipsis /* 使用省略号表示文本溢出 */;
+    color: white;
+  }
+
+.headerRowStyle{
+    border-radius: 0px;
+  }
+
+  /* 分页模块 */
+.ant-pagination {
+    text-align: end;
+}
+.ant-pagination-total-text {
+    color: white;
+}
+.ant-pagination-item-active {
+    border-color: white!important;
+    background: var(--middleColor)!important;
+}
+.ant-pagination-item a{
+    color: white!important;
+}
+.ant-pagination-item-active a {
+    color: white!important;
+}
+/* .ant-pagination-prev, .ant-pagination-next {
+    color: var(--middleColor)!important;
+} */
+.ant-pagination-prev button, .ant-pagination-next button {
+    color: white!important;
+}
+.ant-pagination-disabled button {
+    color: rgba(0,0,0,0.25)!important;
+}

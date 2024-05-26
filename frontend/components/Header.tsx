@@ -2,7 +2,7 @@
  * @Author: Jacket-mzl
  * @Date: 2024-05-20 09:08:00
  * @LastEditors: Jacket-mzl
- * @LastEditTime: 2024-05-24 14:27:44
+ * @LastEditTime: 2024-05-25 14:16:32
  * @Description:
  */
 "use client";
@@ -19,11 +19,14 @@ export function Header() {
   const deskTopStyle = {
     backgroundColor: "rgba(255,255,255,0.1)",
     margin: "20px auto",
+    height: "64px",
+    width: "100%",
   };
   const phoneStyle = {
     margin: "10px 0px",
     justifyContent: "space-between",
     width: "auto",
+    height: "64px",
   };
   // 为什么这里要设置一个isDeskTopFlag 然后又放在useEffect里面重新赋值
   // 因为如果直接判断isDeskTop的话会报错：Prop `style` did not match 服务端和客户端的值不一样导致报错
@@ -34,10 +37,10 @@ export function Header() {
   }, [isDeskTop]);
   return (
     <div
-      className="navbar flex justify-between items-center p-4 pt-2 w-8/12 rounded-full"
+      className="navbar flex justify-between items-center rounded-full"
       style={isDeskTopFlag ? deskTopStyle : phoneStyle}
     >
-      <Image src={logo.src} alt="" width={80} height={80} />
+      <Image src={logo.src} alt="" width={70} height={70} />
       <div className="flex items-center">
         <Link
           href="/"
