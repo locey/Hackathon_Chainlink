@@ -25,7 +25,7 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
 
     uint256 private constant SUBSCRIPTION_ID = 77784756389855806114036560113575506838375644377711949283551480146383584215388;
 
-    // Your chainlink subscription ID.
+    // Your chainlink subscription ID...
     uint256 public s_subscriptionId;
 
     // Sepolia coordinator. For other networks,
