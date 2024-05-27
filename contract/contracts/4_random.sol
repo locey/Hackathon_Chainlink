@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.19;
+pragma solidity ^0.8.19;
 
 import {VRFConsumerBaseV2Plus} from "@chainlink/contracts@1.1.1/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
 import {VRFV2PlusClient} from "@chainlink/contracts@1.1.1/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
@@ -25,7 +25,7 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
 
     uint256 private constant SUBSCRIPTION_ID = 77784756389855806114036560113575506838375644377711949283551480146383584215388;
 
-    // Your subscription ID.
+    // Your chainlink subscription ID.
     uint256 public s_subscriptionId;
 
     // Sepolia coordinator. For other networks,

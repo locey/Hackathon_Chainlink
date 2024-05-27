@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.25+commit.b61c2a91"
 	},
 	"language": "Solidity",
 	"output": {
@@ -383,9 +383,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/4_random.sol": "VRFD20"
+			"contract/contracts/4_random.sol": "VRFD20"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -461,12 +461,12 @@
 				"dweb:/ipfs/QmWzLDgcS9jUh4AT65dQRr46ZhGHgQ4KoNfSdFiFTFqneQ"
 			]
 		},
-		"contracts/4_random.sol": {
-			"keccak256": "0x0afae5d2f59b6446fc70ab2a1a787cddb14d7ee315c3643f2c0b644a51175ecd",
+		"contract/contracts/4_random.sol": {
+			"keccak256": "0xf2082c6e956c635b5fc93aed0c10a52dd18bd418af150612776aaeee6d729e55",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://424a9f541decfacfe008b3b56146d5036994c71d036912bb8246d4b16c3e5a54",
-				"dweb:/ipfs/QmaYPpqY4czHXKcVrHSNwmnzCNZbpWiEiuNpvvitdr3ejM"
+				"bzz-raw://47835dc34ddf84fb40da0e053a0b8cec6c7755b88abc08642cd88d29cbb56a14",
+				"dweb:/ipfs/Qmat4Y9Z96XSaXgWGebmGU6QzR5oo57NdYRNioykwisux9"
 			]
 		}
 	},
