@@ -142,6 +142,19 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "randomNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "RandomNumberGenerated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "acceptOwnership",
 				"outputs": [],
@@ -182,6 +195,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "length",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "numWords",
 				"outputs": [
 					{
@@ -201,6 +227,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "random_num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -462,11 +501,11 @@
 			]
 		},
 		"contract/contracts/4_random.sol": {
-			"keccak256": "0x2da212959ff0a59811551adc0accdd75e2f7d7a39d2188a6e84bba5f292d58a3",
+			"keccak256": "0x8bc0c0e5b14355b574ec8cb3d5b521457337f35b10d7bebe8b1e3af2c352b706",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ddf5482b56c107bc0279c98e79e964630e2d6fe307bf9da82a9084e644ebd943",
-				"dweb:/ipfs/Qma3GgprU2zjLXd28bdca7ptUxcJWQ8JzrC6zzwfoi1jJi"
+				"bzz-raw://215bbb86735fdd54676baf14908ba9185d35101cf93d588b1ae6ec0564980c84",
+				"dweb:/ipfs/QmcYvttFZeZbtvXqLsCUo5Z41HmJm4Qke9rwXDvfJWSVh6"
 			]
 		}
 	},

@@ -53,6 +53,9 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
     // Cannot exceed VRFCoordinatorV2_5.MAX_NUM_WORDS.
     uint32 public numWords = 1;
 
+    uint256 public length = 100;
+    uint256 public random_num = 0;
+
     // map rollers to requestIds
     mapping(uint256 => address) private s_rollers;
     // map vrf results to rollers
@@ -60,6 +63,7 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
 
     event DiceRolled(uint256 indexed requestId, address indexed roller);
     event DiceLanded(uint256 indexed requestId, uint256 indexed result);
+    event RandomNumberGenerated(uint256 indexed randomNumber);
 
     constructor() VRFConsumerBaseV2Plus(vrfCoordinator) {
         s_subscriptionId = SUBSCRIPTION_ID;
@@ -117,6 +121,9 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
         uint256 d20Value = (randomWords[0] % 20) + 1;
         s_results[s_rollers[requestId]] = d20Value;
         emit DiceLanded(requestId, d20Value);
+
+        random_num = (randomWords[0] % length);
+        emit RandomNumberGenerated(random_num);
     }
 
     /**
