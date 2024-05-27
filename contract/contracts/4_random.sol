@@ -61,13 +61,6 @@ contract VRFD20 is VRFConsumerBaseV2Plus {
     event DiceRolled(uint256 indexed requestId, address indexed roller);
     event DiceLanded(uint256 indexed requestId, uint256 indexed result);
 
-    /**
-     * @notice Constructor inherits VRFConsumerBaseV2Plus
-     *
-     * @dev NETWORK: Sepolia
-     *
-     * @param subscriptionId subscription ID that this consumer contract can use
-     */
     constructor() VRFConsumerBaseV2Plus(vrfCoordinator) {
         s_subscriptionId = SUBSCRIPTION_ID;
     }
