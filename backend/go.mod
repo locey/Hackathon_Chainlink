@@ -1,6 +1,6 @@
 module backend
 
-go 1.22.3
+go 1.21.3
 
 require (
 	github.com/casbin/casbin/v2 v2.87.1
