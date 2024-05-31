@@ -1,0 +1,79 @@
+.ant-modal-content {
+    background-color: #1b3745!important;
+    color: white !important;
+}
+
+.ant-modal-header {
+    background-color: #1b3745!important;
+}
+
+.ant-modal-title {
+    color: white!important;
+}
+
+.ant-modal-close-icon svg {
+    color: white;
+}
+
+.ant-form-item-required {
+    color: white!important;
+}
+
+.ant-input-number {
+    border-radius: 0px!important;
+}
+
+.ant-input-number-focused {
+    border: 0px;
+    box-shadow: none!important;
+    border-color: #2bccd4!important;
+}
+
+.ant-input-number-input {
+    background-color: #1b3745!important;
+    color: white!important;
+    border-radius: 0px!important;
+}
+
+.ant-form-item-control-input {
+    border: none!important;
+}
+
+.ant-input-number-outlined {
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:1px solid #2c7c83;
+}
+
+.ant-input-number-outlined:hover{
+    border-bottom:1px solid #2bccd4;
+}
+
+.ant-input-number-outlined:focus {
+    border-bottom:1px solid #2bccd4;
+}
+
+.ant-input-number-input-wrap input::placeholder{
+    color: #879298!important;
+}
+.ant-input-number-handler {
+    border-inline-start:0px!important;
+}
+.ant-input-number-handler-wrap {
+    background: #2c7c83!important;
+    border: 0px!important;
+    border-start-end-radius: 0px!important;
+    border-end-end-radius:0px!important;
+}
+.ant-input-number-handler-up{
+    /* border-start-end-radius:0px!important; */
+    border-bottom:1px solid #2bccd4;
+ }
+.ant-input-number-handler-down {
+    /* border-block-start: 1px solid #2bccd4!important; */
+    /* border-start-end-radius:0px!important; */
+}
+.ant-input-number-handler-up-inner svg, .ant-input-number-handler-down svg{
+    color:white;
+}
